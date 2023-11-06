@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moneyrate.Model.MoneyRate
 import com.example.moneyrate.databinding.RecRowBinding
+import com.example.moneyrate.view.MainActivity
 
-class RecAdapter(private val MoneyList : ArrayList<MoneyRate>, private val listener : Listener) : RecyclerView.Adapter<RecAdapter.RowHolder>() {
+class RecAdapter(private val MoneyList: ArrayList<MoneyRate>, private val listener: MainActivity) : RecyclerView.Adapter<RecAdapter.RowHolder>() {
 
     interface Listener {
         fun onItemClick(MoneyRate: MoneyRate)
